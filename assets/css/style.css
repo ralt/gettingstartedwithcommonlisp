@@ -29,12 +29,12 @@ a:hover {
     position: fixed;
     width: 100%;
     top: 0;
+    background: url(imgs/stressed_linen.png);
 }
 
 #menu ul {
-    background: url(imgs/stressed_linen.png);
-    margin: 0;
     padding: 0;
+    margin: auto;
 }
 
 #menu li {
