@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Getting started with Common Lisp</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li>Introduction</li>
+            <li>Glossary</li>
+            <li>Resources</li>
+            <li>Tools</li>
+        </ul>
+    </div>
+
+    <article>
+        <header id="header" class="slide">
+            <h1>Getting started with Common Lisp</h1>
+            <p>
+            List of resources to help you get started with Common Lisp.
+            </p>
+        </header>
+
+        <div id="introduction" class="slide">
+            <h2>Introduction</h2>
+            <p>
+            This webpage is a comprehensive list of resources for people new in
+            the Common Lisp (CL) world. It tries its best to :
+            </p>
+
+            <ul>
+                <li>Define the terms used in the CL world.</li>
+                <li>Show the best resources to learn about CL.</li>
+                <li>Learn what the common tools in the CL world are.</li>
+            </ul>
+        </div>
+
+        <div id="glossary" class="slide">
+            <h2>Glossary</h2>
+            <p>
+            Here are some common terms used in the CL world. This is in no way
+            an exhaustive list, it is just there to show you an introduction.
+            </p>
+
+            <dl>
+                <dt><a href="http://en.wikipedia.org/wiki/Common_Lisp">Common
+                Lisp</a></dt>
+                <dd>
+                Common Lisp (abbreviated CL) is a language defined by a
+                standard.
+                </dd>
+
+                <dt>REPL</dt>
+                <dd>
+                Read-Eval-Print-Loop. A tool that lets you write code and run
+                it right away.
+                </dd>
+
+                <dt>CL Implementation</dt>
+                <dd>
+                A CL implementation is a software that can read and compile
+                CL code according to the CL standard. You will need one of these
+                if you want to run your code.<br>
+                Some examples are <a href="http://www.sbcl.org">SBCL</a>,
+                <a href="http://www.clisp.org">CLISP</a>,
+                <a href="http://common-lisp.net/project/armedbear/">ABCL</a>,
+                <a href="http://ccl.clozure.com/">Clozure CL</a>,
+                <a href="http://www.cons.org/cmucl/">CMUCL</a>,
+                <a href="http://ecls.sourceforge.net/">ECL</a> or
+                <a href="http://www.lispworks.com/">LispWorks</a>.
+                </dd>
+            </dl>
+        </div>
+
+        <div id="resources" class="slide">
+            <h2>Resources</h2>
+            <p>
+            This is a list of community-recognized resources you will need
+            to make your way around CL.
+            </p>
+
+            <dl>
+                <dt><a href="http://www.gigamonkeys.com/book/">Practical Common
+                Lisp</a></dt>
+                <dd>
+                Learn Common Lisp from the ground up. This is <em>the</em>
+                resource that everyone recommends to people wanting to get
+                started with Common Lisp.
+                </dd>
+
+                <dt><a href="http://www.lispworks.com/documentation/HyperSpec/Front/">
+                    HyperSpec</a>HyperSpec</dt>
+                <dd>
+                This is probably the most complete readable documentation about
+                Common Lisp. This documentation is specific to one
+                implementation, but since it respects the CL standard, you will
+                find most of the methods you need to write your code. Don't be
+                afraid of its simple layout, the content is a must.
+                </dd>
+            </dl>
+        </div>
+
+        <div id="tools" class="slide">
+            <h2>Tools</h2>
+            <p>
+            There are some tools that everybody writing code with CL uses.
+            Here are some of them.
+            </p>
+
+            <dl>
+                <dt><a href="http://www.quicklisp.org/">QuickLisp</a></dt>
+                <dd>
+                QuickLisp is the community-recognized package manager for CL
+                libraries. Look at <a href="http://www.quicklisp.org/beta/">
+                introduction</a> to see how easy it is to install packages.
+                </dd>
+
+                <dt><a href="http://common-lisp.net/project/slime/">Slime</a>
+                </dt>
+                <dd>
+                Slime is a tool you use with Emacs, the text editor. It lets
+                you have a complete IDE within Emacs, with an REPL, a debugger,
+                auto completion, and much more.
+                </dd>
+
+                <dt><a href="http://common-lisp.net/project/asdf/">ASDF</a></dt>
+                <dd>
+                ASDF is the make of Common Lisp. It allows you to specify
+                how your Lisp source code is organized and should be compiled.
+                </dd>
+            </dl>
+        </div>
+    </article>
+
+    <script src="assets/js/bundle.js"></script>
+</body>
+</html>
