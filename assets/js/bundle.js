@@ -30,7 +30,7 @@
 
         width = [].reduce.call(lis, function(p, c) {
             return p + parseInt(window.getComputedStyle(c).width, 10);
-        }, 0);
+        }, 0) + 10; // fix for some browsers
 
         ul.style.width = width + 'px';
     }
