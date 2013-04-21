@@ -14,6 +14,14 @@ h1, h2, div, ul, p, dl {
     clear: both;
 }
 
+a {
+    color: #666;
+}
+
+a:hover {
+    color: #333;
+}
+
 /**
  * Menu
  */
@@ -51,6 +59,12 @@ h1, h2, div, ul, p, dl {
  */
 .slide {
     padding: 100px;
+}
+
+.slide h2 {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 3em;
 }
 
 /**
