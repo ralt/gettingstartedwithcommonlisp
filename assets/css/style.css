@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    background: url(imgs/textured_paper.png);
+}
+
+.clearboth {
+    clear: both;
+}
+
+#menu ul {
+    background: url(imgs/grey_wash_wall.png);
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    float: left;
+    list-style: none;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+    padding: 15px 20px;
+    display: block;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
