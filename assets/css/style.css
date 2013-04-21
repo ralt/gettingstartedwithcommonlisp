@@ -55,19 +55,6 @@ a:hover {
 }
 
 /**
- * Slides
- */
-.slide {
-    padding: 100px;
-}
-
-.slide h2 {
-    text-align: center;
-    padding-bottom: 50px;
-    font-size: 3em;
-}
-
-/**
  * Backgrounds
  */
 #header {
@@ -104,4 +91,21 @@ a:hover {
 
 #header p {
     font-size: 1.5em;
+}
+
+/**
+ * Slides
+ */
+.slide {
+    padding: 100px;
+}
+
+.slide h2 {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 3em;
+}
+
+.slide dl {
+    margin-top: 30px;
 }
