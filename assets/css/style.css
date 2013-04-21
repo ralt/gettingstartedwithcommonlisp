@@ -1,14 +1,30 @@
+/**
+ * Global
+ */
 body {
     margin: 0;
-    background: url(imgs/textured_paper.png);
+    font-family: Helvetica;
+}
+
+h1, h2, div, ul, p, dl {
+    margin: 0;
 }
 
 .clearboth {
     clear: both;
 }
 
+/**
+ * Menu
+ */
+#menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
 #menu ul {
-    background: url(imgs/grey_wash_wall.png);
+    background: url(imgs/stressed_linen.png);
     margin: 0;
     padding: 0;
 }
@@ -28,4 +44,50 @@ body {
 
 #menu a:hover {
     text-decoration: underline;
+}
+
+/**
+ * Slides
+ */
+.slide {
+    padding: 100px;
+}
+
+/**
+ * Backgrounds
+ */
+#header {
+    background: url(imgs/p6.png);
+}
+
+#introduction {
+    background: url(imgs/textured_paper.png);
+}
+
+#glossary {
+    background: url(imgs/straws.png);
+}
+
+#resources {
+    background: url(imgs/light_noise_diagonal.png);
+}
+
+#tools {
+    background: url(imgs/ps_neutral.png);
+}
+
+/**
+ * Header
+ */
+#header {
+    text-align: center;
+}
+
+#header h1 {
+    font-size: 4em;
+    padding-top: 100px;
+}
+
+#header p {
+    font-size: 1.5em;
 }
