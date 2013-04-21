@@ -28,16 +28,10 @@
     function setWidth() {
         var width = 0;
 
-        width = getLisWidth().reduce(function(p, c) {
-            return p + c;
+        width = [].reduce.call(lis, function(p, c) {
+            return p + parseInt(window.getComputedStyle(c).width, 10);
         }, 0);
 
         ul.style.width = width + 'px';
-    }
-
-    function getLisWidth() {
-        return [].map.call(lis, function(li) {
-            return parseInt(window.getComputedStyle(li).width, 10);
-        });
     }
 }());
