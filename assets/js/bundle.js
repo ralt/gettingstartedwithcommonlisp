@@ -27,10 +27,17 @@
 
     function setWidth() {
         var width = 0;
-        [].forEach.call(lis, function(li) {
-            width += parseInt(window.getComputedStyle(li).width, 10);
-        });
+
+        width = getLisWidth().reduce(function(p, c) {
+            return p + c;
+        }, 0);
 
         ul.style.width = width + 'px';
+    }
+
+    function getLisWidth() {
+        return [].map.call(lis, function(li) {
+            return parseInt(window.getComputedStyle(li).width, 10);
+        });
     }
 }());
