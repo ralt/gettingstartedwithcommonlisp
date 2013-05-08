@@ -12,6 +12,7 @@
             <li><a href="#introduction">Introduction</a></li>
             <li><a href="#glossary">Glossary</a></li>
             <li><a href="#resources">Resources</a></li>
+	    <li><a href="#implementations">Implementations</a></li>
             <li><a href="#tools">Tools</a></li>
             <div class="clearboth"></div>
         </ul>
@@ -20,15 +21,12 @@
     <article>
         <header id="header" class="slide">
             <h1>Getting started with Common Lisp</h1>
-            <p>
-            List of resources to help you get started with Common Lisp
-            </p>
         </header>
 
         <div id="introduction" class="slide">
             <h2>Introduction</h2>
             <p>
-            This webpage is a comprehensive list of resources for people new in
+              This webpage is a comprehensive list of resources for people new in
             the Common Lisp (CL) world. It tries its best to :
             </p>
 
@@ -41,37 +39,30 @@
 
         <div id="glossary" class="slide">
             <h2>Glossary</h2>
-            <p>
-            Here are some common terms used in the CL world. This is in no way
-            an exhaustive list, it is just there to show you an introduction.
-            </p>
-
+       
             <dl>
                 <dt><a href="http://en.wikipedia.org/wiki/Common_Lisp">Common
-                Lisp</a></dt>
+                Lisp:</a></dt>
                 <dd>
-                Common Lisp (abbreviated CL) is a language defined by a
-                standard.
+                Common Lisp, usually abbreviated as CL (and not clisp), is a language defined by
+                an ANSI standard.
                 </dd>
 
-                <dt>REPL</dt>
+                <dt>REPL:</dt>
                 <dd>
-                Read-Eval-Print-Loop. A tool that lets you write code and run
-                it right away.
+                read-eval-print-loop, an interpreter. Quite useful for
+                interactive development.
                 </dd>
 
-                <dt>CL Implementation</dt>
+                <dt>Implementation:</dt>
                 <dd>
-                A CL implementation is a software that can read and compile
-                CL code according to the CL standard. You will need one of these
-                if you want to run your code.<br>
-                Some examples are <a href="http://www.sbcl.org">SBCL</a>,
-                <a href="http://www.clisp.org">CLISP</a>,
-                <a href="http://common-lisp.net/project/armedbear/">ABCL</a>,
-                <a href="http://ccl.clozure.com/">Clozure CL</a>,
-                <a href="http://www.cons.org/cmucl/">CMUCL</a>,
-                <a href="http://ecls.sourceforge.net/">ECL</a> or
-                <a href="http://www.lispworks.com/">LispWorks</a>.
+		  An standard-conforming implementation of Common Lisp
+                  should be able to compile/interpret
+                  standard-conforming Common Lisp code. <br>
+
+		  <a href="http://www.sbcl.org">SBCL</a>
+		  and <a href="http://ccl.clozure.com/">Clozure
+		  CL</a> are some free implementations.
                 </dd>
             </dl>
         </div>
@@ -108,39 +99,53 @@
             </dl>
         </div>
 
+	<div id="implementations" class="slide">
+
+	  <h2> Implementations </h2>
+
+	  Commonly used implemenations:
+
+	  <ul>
+	    <li> <a href="http://www.sbcl.org">SBCL</a> </li>
+	    <li> <a href="http://ccl.clozure.com/">Clozure CL</a> </li>
+	    <li> <a href="http://www.clisp.org">CLISP</a> </li>
+	    <li> <a href="http://common-lisp.net/project/armedbear/">ABCL</a> </li>
+	    <li> <a href="http://www.cons.org/cmucl/">CMUCL</a> </li>
+	    <li> <a href="http://ecls.sourceforge.net/">ECL</a> </li>
+	    <li> <a href="http://www.lispworks.com/">LispWorks</a> </li>
+	    <li> <a href="http://www.franz.com/products/allegro-common-lisp/">Allegro CL</a> </li>
+	  </ul>
+	  
+	</div>
+
         <div id="tools" class="slide">
             <h2>Tools</h2>
-            <p>
-            There are some tools that everybody writing code with CL uses.
-            Here are some of them.
-            </p>
 
             <dl>
                 <dt><a href="http://www.quicklisp.org/">QuickLisp</a></dt>
                 <dd>
-                QuickLisp is the community-recognized package manager for CL
-                libraries. Look at <a href="http://www.quicklisp.org/beta/">
-                its introduction</a> to see how easy it is to install packages.
+                  Quicklisp has, in recent times, become the de-facto
+                  method of obtaining open source Lisp libraries.
                 </dd>
 
                 <dt><a href="http://common-lisp.net/project/asdf/">ASDF</a></dt>
                 <dd>
-                ASDF is the make of Common Lisp. It allows you to specify
-                how your Lisp source code is organized and should be compiled.
+		  Another System Definition Facility (ASDF) is a commonly used build
+		  system in the Lisp world.
                 </dd>
 
                 <dt><a href="http://common-lisp.net/project/slime/">Slime</a>
                 </dt>
                 <dd>
-                Slime is a tool you use with Emacs, the text editor. It lets
-                you have a complete IDE within Emacs, with an REPL, a debugger,
-                auto completion, and much more.
+                  Superior Lisp Interaction Mode for Emacs (SLIME) is
+                  a commonly used Emacs mode that turns Emacs into a
+                  Lisp IDE.
                 </dd>
 
                 <dt><a href="http://www.vim.org/scripts/script.php?script_id=2531">
                     Slimv</a></dt>
                 <dd>
-                Slimv is the Slime for Vim users.
+                Think SLIME, but for Vim users.
                 </dd>
             </dl>
         </div>
