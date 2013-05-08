@@ -77,6 +77,11 @@ a:hover {
     background: url(imgs/ps_neutral.png);
 }
 
+#implementations {
+    // add desired pattern here.
+    background: url();
+}
+
 /**
  * Header
  */
