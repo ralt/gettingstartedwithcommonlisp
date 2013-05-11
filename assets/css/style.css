@@ -42,6 +42,10 @@ a:hover {
     list-style: none;
 }
 
+#menu li.active {
+    background: #666;
+}
+
 #menu a {
     text-decoration: none;
     color: #eee;
