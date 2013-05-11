@@ -22,7 +22,7 @@ function setWidth() {
 
 function setActive(e) {
     var index = 0,
-        height = -10, // don't ask
+        height = -50, // don't ask
         scrollY = window.scrollY;
 
     [].every.call(divs, function(div) {
