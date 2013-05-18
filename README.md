@@ -6,8 +6,7 @@ this webpage.
 It is in no way perfect. If you want to contribute, please do so
 through a pull request.
 
-Contributors
----
+#### Contributors
 
 - [Florian Margaine](http://margaine.com)
 - [Samuel Chase](http://www.samebchase.com/)
