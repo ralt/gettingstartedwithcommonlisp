@@ -1,315 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Getting started with Common Lisp</title>
     <link href="assets/css/style.css" rel="stylesheet">
-</head>
-<body>
+  </head>
+  <body>
     <div id="menu">
-        <ul>
-            <li class="active"><a href="#header">Home</a></li>
-            <li><a href="#books">Books</a></li>
-            <li><a href="#tutorials">Tutorials</a></li>			
-            <li><a href="#reference">Reference</a></li>
-			<li><a href="#implementations">Implementations</a></li>
-            <li><a href="#tools">Tools</a></li>
-        	<li><a href="#glossary">Glossary</a></li>
-            <div class="clearboth"></div>
-        </ul>
+      <ul>
+        <li class="active"><a href="#header">Home</a></li>
+        <li><a href="#glossary">Glossary</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#tutorials">Tutorials</a></li>			
+        <li><a href="#reference">Reference</a></li>
+		<li><a href="#implementations">Implementations</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <div class="clearboth"></div>
+      </ul>
     </div>
 
     <article>
-        <header id="header" class="slide">
-            <h1>Getting started with Common Lisp</h1>
-            <p>
-              Everything you need to start programming in Common Lisp.
-            </p>
-        </header>
+      <header id="header" class="slide">
+        <h1>Getting started with Common Lisp</h1>
+        <p>
+          Everything you need to start programming in Common Lisp.
+        </p>
+      </header>
 
-        <div id="books" class="slide">
-            <h2>Books</h2>
+	  <div id="glossary" class="slide">
+        <h2>Glossary</h2>
 
-            <dl>
-                <dt>
-                  <a href="http://www.gigamonkeys.com/book/">Practical Common
-                    Lisp: </a>
-                </dt>
+        <dl>
+          <dt><a href="http://en.wikipedia.org/wiki/Common_Lisp">Common
+              Lisp:</a></dt>
+          <dd>
+            Common Lisp, usually abbreviated as CL (and not clisp), is a language defined by
+            an ANSI standard.
+          </dd>
 
-                <dd>
-                Learn Common Lisp from the ground up. This is <em>the</em>
-                resource that everyone recommends to people wanting to get
-                started with Common Lisp. Asssumes basic programming knowledge.
-                </dd>
+          <dt>REPL:</dt>
+          <dd>
+            read-eval-print-loop, an interpreter. Quite useful for
+            interactive development.
+          </dd>
 
-				<dt>
-				  <a href="http://landoflisp.com/"> Land of Lisp: </a>
-				</dt>
-				<dd>
-				  A widely regarded book on CL. The illustrations are a bonus.
-				</dd>
+          <dt>Implementation:</dt>
+          <dd>
+            A standard-conforming implementation of Common Lisp
+            should be able to compile/interpret
+            standard-conforming Common Lisp code. <br>
 
-                <dt>
-                  <a href="http://www.cs.cmu.edu/~dst/LispBook/index.html">
-                  Common Lisp: A Gentle Introduction to Symbolic
-                  Computation: </a>
-                </dt>
-                <dd>
-                  A good book for someone new to programming.
-                </dd>
+            <a href="http://www.sbcl.org">SBCL</a>
+            and <a href="http://ccl.clozure.com/">Clozure
+              CL</a> are some free implementations.
+          </dd>
+        </dl>
+      </div>
 
-				<dt>
-				  <a href="http://www.norvig.com/paip.html"> Paradigms of Artificial Intelligence Programming: </a>
-				</dt>
-				<dd>
-				  Introduces Common Lisp as a vehicle of writing AI programs.
-				</dd>
+      <div id="books" class="slide">
+        <h2>Books</h2>
 
-                <dt>
-                  <a href="http://psg.com/~dlamkins/sl/contents.html"> Sucessful Lisp: </a>
-                </dt>
-                <dd>
-                  Another book introducing Common Lisp.
-                </dd>
+        <dl>
+          <dt>
+            <a href="http://www.gigamonkeys.com/book/">Practical Common
+              Lisp: </a>
+          </dt>
 
-				<dt>
-				  <a href="http://lispwebtales.ppenev.com/"> Lisp Web Tales: </a>
-				</dt>
-				<dd>
-				  Web development, with Common Lisp.
-				</dd>
+          <dd>
+            Learn Common Lisp from the ground up. This is <em>the</em>
+            resource that everyone recommends to people wanting to get
+            started with Common Lisp. Asssumes basic programming knowledge.
+          </dd>
 
-                <dt>
-                  <a href="http://www.paulgraham.com/onlisp.html"> On Lisp:</a>
-                </dt>
-                <dd>
-                <em>On Lisp</em> is probably the book with the best coverage on
-                CL macros.
-                </dd>
+		  <dt>
+			<a href="http://landoflisp.com/"> Land of Lisp: </a>
+		  </dt>
+		  <dd>
+			A widely regarded book on CL. The illustrations are a bonus.
+		  </dd>
 
-				<dt>
-				  <a href="http://letoverlambda.com/index.cl/toc">  Let Over Lambda: </a>
-				</dt>
-				<dd>
-				  Advanced coverage of CL macros.
-				</dd>
+          <dt>
+            <a href="http://www.cs.cmu.edu/~dst/LispBook/index.html">
+              Common Lisp: A Gentle Introduction to Symbolic
+              Computation: </a>
+          </dt>
+          <dd>
+            A good book for someone new to programming.
+          </dd>
 
-            </dl>
-        </div>
+		  <dt>
+			<a href="http://www.norvig.com/paip.html"> Paradigms of Artificial Intelligence Programming: </a>
+		  </dt>
+		  <dd>
+			Introduces Common Lisp as a vehicle of writing AI programs.
+		  </dd>
 
-		<div id="tutorials" class="slide">
+          <dt>
+            <a href="http://psg.com/~dlamkins/sl/contents.html"> Sucessful Lisp: </a>
+          </dt>
+          <dd>
+            Another book introducing Common Lisp.
+          </dd>
 
-		  <h2> Tutorials </h2>
+		  <dt>
+			<a href="http://lispwebtales.ppenev.com/"> Lisp Web Tales: </a>
+		  </dt>
+		  <dd>
+			Web development, with Common Lisp.
+		  </dd>
 
-		  <dl>
-			
-			<dt>
-			  <a href="http://lisp.plasticki.com/"> Lisp in Small Parts: </a>
-			</dt>
-			<dd>
-			  A series of introductory Lisp tutorials.
-			</dd>
+          <dt>
+            <a href="http://www.paulgraham.com/onlisp.html"> On Lisp:</a>
+          </dt>
+          <dd>
+            <em>On Lisp</em> is probably the book with the best coverage on
+            CL macros.
+          </dd>
 
-			<dt> 
-			  <a href="http://www.lisperati.com/casting.html"> Casting SPELs in Lisp -- A Comic Book: </a>
-			</dt>
-			<dd>
-			  A fun, illustrated introduction to Lisp.
-			</dd>
+		  <dt>
+			<a href="http://letoverlambda.com/index.cl/toc">  Let Over Lambda: </a>
+		  </dt>
+		  <dd>
+			Advanced coverage of CL macros.
+		  </dd>
 
-			<dt>
-              <a href="http://random-state.net/features-of-common-lisp.html"> Features of Common Lisp: </a>
-			</dt>
-			<dd>
-              A tour of the various features of Common Lisp, with illustrative example code.
-			</dd>
+        </dl>
+      </div>
 
-			<dt>
-			  <a href="http://www.adampetersen.se/articles/lispweb.htm"> Lisp for the Web: </a>
-			</dt>
-			<dd>
-			  Shows how Lisp can be used to make web applications.
-			</dd>
+	  <div id="tutorials" class="slide">
 
-			<dt>
-			  <a href="http://msnyder.info/posts/2011/07/lisp-for-the-web-part-ii/"> Lisp for the Web, Part II: </a>
-			</dt>
-			<dd>
-			  An extension to the above tutorial.
-			</dd>
+		<h2> Tutorials </h2>
 
-			<dt>
-			  <a href="http://chaitanyagupta.com/lisp/restarts.html"> A Tutorial on Conditions and Restarts: </a>
-			</dt>
-			<dd>
-			  An introduction to the Condition system.
-			</dd>
+		<dl>
+		  
+		  <dt>
+			<a href="http://lisp.plasticki.com/"> Lisp in Small Parts: </a>
+		  </dt>
+		  <dd>
+			A series of introductory Lisp tutorials.
+		  </dd>
 
-		  </dl>
-		</div>
+		  <dt> 
+			<a href="http://www.lisperati.com/casting.html"> Casting SPELs in Lisp -- A Comic Book: </a>
+		  </dt>
+		  <dd>
+			A fun, illustrated introduction to Lisp.
+		  </dd>
 
-		<div id="reference" class="slide">
+		  <dt>
+            <a href="http://random-state.net/features-of-common-lisp.html"> Features of Common Lisp: </a>
+		  </dt>
+		  <dd>
+            A tour of the various features of Common Lisp, with illustrative example code.
+		  </dd>
 
-		  <h2> Reference </h2>
+		  <dt>
+			<a href="http://www.adampetersen.se/articles/lispweb.htm"> Lisp for the Web: </a>
+		  </dt>
+		  <dd>
+			Shows how Lisp can be used to make web applications.
+		  </dd>
 
-		  <dl>
+		  <dt>
+			<a href="http://msnyder.info/posts/2011/07/lisp-for-the-web-part-ii/"> Lisp for the Web, Part II: </a>
+		  </dt>
+		  <dd>
+			An extension to the above tutorial.
+		  </dd>
 
-            <dt>
-              <a href="http://www.lispworks.com/documentation/HyperSpec/Front/">
-                The Common Lisp HyperSpec:</a>
-            </dt>
-            <dd>
-              The ANSI standard, in HTML.
-            </dd>
+		  <dt>
+			<a href="http://chaitanyagupta.com/lisp/restarts.html"> A Tutorial on Conditions and Restarts: </a>
+		  </dt>
+		  <dd>
+			An introduction to the Condition system.
+		  </dd>
 
-            <dt>
-              <a href="http://www.cliki.net/"> CLiki: </a>
-            </dt>
-            <dd>
-              The Common Lisp wiki.
-            </dd>
+		</dl>
+	  </div>
 
-            <dt>
-              <a href="http://www.common-lisp.net/"> Common Lisp.net: </a>
-            </dt>
-            <dd>
-              Hosts many Common Lisp projects.
-            </dd>
+	  <div id="reference" class="slide">
 
-			<dt>
-			  <a href="http://www.cliki.net/Current%20recommended%20libraries"> Recommended Libraries: </a>
-			</dt>
+		<h2> Reference </h2>
 
-			<dd>
-			  CLiki's (slightly dated) recommended CL Libraries.
-			</dd>
+		<dl>
 
-            <dt>
-              <a href="http://jtra.cz/stuff/lisp/sclr/index.html"> Simplified Common Lisp Reference: </a>
-            </dt>
-            <dd>
-              A simplified reference, listing the more frequently used symbols.
-            </dd>
-			
-		  </dl>
-		</div>
+          <dt>
+            <a href="http://www.lispworks.com/documentation/HyperSpec/Front/">
+              The Common Lisp HyperSpec:</a>
+          </dt>
+          <dd>
+            The ANSI standard, in HTML.
+          </dd>
 
-        <div id="implementations" class="slide">
+          <dt>
+            <a href="http://www.cliki.net/"> CLiki: </a>
+          </dt>
+          <dd>
+            The Common Lisp wiki.
+          </dd>
 
-          <h2> Implementations </h2>
+          <dt>
+            <a href="http://www.common-lisp.net/"> Common Lisp.net: </a>
+          </dt>
+          <dd>
+            Hosts many Common Lisp projects.
+          </dd>
 
-          <dl>
+		  <dt>
+			<a href="http://www.cliki.net/Current%20recommended%20libraries"> Recommended Libraries: </a>
+		  </dt>
 
-            <dt> <a href="http://www.sbcl.org">SBCL:</a> </dt>
-            <dd> A compiler that generates fast code. </dd>
+		  <dd>
+			CLiki's (slightly dated) recommended CL Libraries.
+		  </dd>
 
-            <dt> <a href="http://ccl.clozure.com/">Clozure CL:</a> </dt>
-            <dd> A compiler preferred by OSX users. </dd>
+          <dt>
+            <a href="http://jtra.cz/stuff/lisp/sclr/index.html"> Simplified Common Lisp Reference: </a>
+          </dt>
+          <dd>
+            A simplified reference, listing the more frequently used symbols.
+          </dd>
+		  
+		</dl>
+	  </div>
 
-            <dt> <a href="http://common-lisp.net/project/armedbear/">ABCL:</a> </dt>
-            <dd> An implementation of Common Lisp that runs on the
+      <div id="implementations" class="slide">
+
+        <h2> Implementations </h2>
+
+        <dl>
+
+          <dt> <a href="http://www.sbcl.org">SBCL:</a> </dt>
+          <dd> A compiler that generates fast code. </dd>
+
+          <dt> <a href="http://ccl.clozure.com/">Clozure CL:</a> </dt>
+          <dd> A compiler preferred by OSX users. </dd>
+
+          <dt> <a href="http://common-lisp.net/project/armedbear/">ABCL:</a> </dt>
+          <dd> An implementation of Common Lisp that runs on the
             JVM, and focuses on Java interoperability. </dd>
 
-            <dt> <a href="http://www.cons.org/cmucl/">CMUCL:</a> </dt>
-            <dd> A fast implementation that SBCL forked off
+          <dt> <a href="http://www.cons.org/cmucl/">CMUCL:</a> </dt>
+          <dd> A fast implementation that SBCL forked off
             from. </dd>
 
-            <dt> <a href="http://ecls.sourceforge.net/">ECL:</a> </dt>
-            <dd> A portable implementation that allows for easy interoperability with C.</dd>
+          <dt> <a href="http://ecls.sourceforge.net/">ECL:</a> </dt>
+          <dd> A portable implementation that allows for easy interoperability with C.</dd>
 
-            <dt> <a href="http://www.clisp.org">GNU CLISP:</a> </dt>
-            <dd> A portable implementation written in C. </dd>
+          <dt> <a href="http://www.clisp.org">GNU CLISP:</a> </dt>
+          <dd> A portable implementation written in C. </dd>
 
-            <dt> <a href="http://www.lispworks.com/">LispWorks:</a></dt>
-            <dd> A commercial implementation which comes with an
+          <dt> <a href="http://www.lispworks.com/">LispWorks:</a></dt>
+          <dd> A commercial implementation which comes with an
             IDE.</dd>
 
-            <dt> <a href="http://www.franz.com/products/allegro-common-lisp/">Allegro
-            CL:</a> </dt>
-            <dd> Another commercial implementation. </dd>
+          <dt> <a href="http://www.franz.com/products/allegro-common-lisp/">Allegro
+              CL:</a> </dt>
+          <dd> Another commercial implementation. </dd>
 
-          </dl>
+        </dl>
 
-        </div>
+      </div>
 
-        <div id="tools" class="slide">
-            <h2>Tools</h2>
+      <div id="tools" class="slide">
+        <h2>Tools</h2>
 
-            <dl>
-                <dt><a href="http://www.quicklisp.org/">Quicklisp</a></dt>
-                <dd>
-                  Quicklisp has, in recent times, become the de-facto
-                  method of obtaining open source Lisp libraries.
-                </dd>
+        <dl>
+          <dt><a href="http://www.quicklisp.org/">Quicklisp</a></dt>
+          <dd>
+            Quicklisp has, in recent times, become the de-facto
+            method of obtaining open source Lisp libraries.
+          </dd>
 
-                <dt><a href="http://common-lisp.net/project/asdf/">ASDF</a></dt>
-                <dd>
-                  Another System Definition Facility (ASDF) is a commonly used build
-                  system in the Lisp world. It is used behind the scenes by QuickLisp.
-                </dd>
+          <dt><a href="http://common-lisp.net/project/asdf/">ASDF</a></dt>
+          <dd>
+            Another System Definition Facility (ASDF) is a commonly used build
+            system in the Lisp world. It is used behind the scenes by QuickLisp.
+          </dd>
 
-                <dt><a href="http://common-lisp.net/project/slime/">Slime</a>
-                </dt>
-                <dd>
-                  Superior Lisp Interaction Mode for Emacs (SLIME) is
-                  a widely used Emacs mode that turns Emacs into a
-                  Lisp IDE.
-                </dd>
+          <dt><a href="http://common-lisp.net/project/slime/">Slime</a>
+          </dt>
+          <dd>
+            Superior Lisp Interaction Mode for Emacs (SLIME) is
+            a widely used Emacs mode that turns Emacs into a
+            Lisp IDE.
+          </dd>
 
-                <dt><a href="http://www.vim.org/scripts/script.php?script_id=2531">
-                    Slimv</a></dt>
-                <dd>
-                Think SLIME, but for Vim users.
-                </dd>
-            </dl>
-        </div>
-
-        <div id="glossary" class="slide">
-          <h2>Glossary</h2>
-
-          <dl>
-            <dt><a href="http://en.wikipedia.org/wiki/Common_Lisp">Common
-                Lisp:</a></dt>
-            <dd>
-              Common Lisp, usually abbreviated as CL (and not clisp), is a language defined by
-              an ANSI standard.
-            </dd>
-
-            <dt>REPL:</dt>
-            <dd>
-              read-eval-print-loop, an interpreter. Quite useful for
-              interactive development.
-            </dd>
-
-            <dt>Implementation:</dt>
-            <dd>
-              A standard-conforming implementation of Common Lisp
-              should be able to compile/interpret
-              standard-conforming Common Lisp code. <br>
-
-              <a href="http://www.sbcl.org">SBCL</a>
-              and <a href="http://ccl.clozure.com/">Clozure
-                CL</a> are some free implementations.
-            </dd>
-          </dl>
-        </div>
-
+          <dt><a href="http://www.vim.org/scripts/script.php?script_id=2531">
+              Slimv</a></dt>
+          <dd>
+            Think SLIME, but for Vim users.
+          </dd>
+        </dl>
+      </div>
 
     </article>
 
     <script src="assets/js/bundle.js"></script>
     <script type="text/javascript">
 
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-40319661-1']);
-        _gaq.push(['_trackPageview']);
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-40319661-1']);
+      _gaq.push(['_trackPageview']);
 
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-         })();
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
     </script>
-</body>
+  </body>
 </html>
